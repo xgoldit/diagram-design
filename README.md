@@ -701,3 +701,12 @@ Other things I've made:
 - [BestSelf.co](https://bestself.co): the SELF Journal and other paper tools for getting things done. Started on Kickstarter in 2015, sold to private equity in 2022, bought back 14 months later ([the story](https://www.littlemight.com/100-days-lessons-from-buying-my-business-back-from-private-equity/)).
 
 If this is useful, **star the repo** and come [say hi on X](https://x.com/cathrynlavery).
+
+<!-- OCI2-RUNNER-STATUS:START -->
+## GitHub Actions · traslado a OCI2 Apps CI
+
+- **Estado:** Pendiente de auditoría.
+- **Alcance / evidencia:** Hay YAML de workflow en la rama predeterminada, pero la API de GitHub no registra workflows activos; revisar activación/validez antes de definir la migración.
+- **Estado vivo:** [GitHub Actions](https://github.com/xgoldit/diagram-design/actions). El resultado de ejecuciones se sincroniza automáticamente allí; esta sección registra el corte documental.
+- **Pool objetivo:** `xgoldit-oci2-apps-ci` (Oracle OCI tenant `ljadue`). No se marca ningún job como exitoso sin verificar el runner y la conclusión `success`.
+<!-- OCI2-RUNNER-STATUS:END -->
