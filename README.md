@@ -705,9 +705,9 @@ If this is useful, **star the repo** and come [say hi on X](https://x.com/cathry
 <!-- OCI-RUNNER-STATUS:START -->
 ## GitHub Actions · estado de OCI
 
-- **Estado de este repositorio:** Sin migración OCI verificada. Al 22-10-2026, la API de Actions no registra workflows ni ejecuciones para este repositorio.
-- **Archivos fuente:** `.github/workflows/auto-bump.yml`, `ci.yml` y `pages.yml` siguen en `main`, pero no aparecen registrados por Actions. `ci.yml` conserva una matriz Linux/Windows/macOS; no se ha alterado ni validado su activación.
-- **Jobs migrados o probados en OCI:** Ninguno. La presencia de YAML no demuestra que se ejecute.
-- **Pool XGOLD IT:** Los jobs compatibles podrán usar `xgoldit-ci-pool` (OCI1 preferente; OCI2 como overflow) sólo tras decisión/habilitación explícita para este repositorio y verificación de una ejecución terminal con su runner e identidad.
+- **Estado actual (22-10-2026):** GitHub Actions registra `auto-bump.yml`, `ci.yml` y `pages.yml`, todos con estado `disabled_manually`. La API lista cero ejecuciones.
+- **Registro:** Antes del push documental, la API listaba cero workflows y cero ejecuciones. Después del push, registró los tres archivos fuente existentes; no se modificó YAML ni la matriz. Los tres workflows quedaron deshabilitados manualmente.
+- **Fuente histórica y matriz:** `.github/workflows/auto-bump.yml`, `.github/workflows/ci.yml` y `.github/workflows/pages.yml` permanecen en `main`. `ci.yml` conserva su matriz Linux/Windows/macOS.
+- **Migración OCI:** Ningún job está migrado o verificado en OCI; no hay una ejecución OCI de este repositorio. El pool XGOLD IT `xgoldit-ci-pool` prioriza OCI1 y permite OCI2 como overflow para jobs compatibles sólo tras una decisión explícita de habilitar workflows en este repositorio.
 - **Estado vivo:** [GitHub Actions](https://github.com/xgoldit/diagram-design/actions).
 <!-- OCI-RUNNER-STATUS:END -->
