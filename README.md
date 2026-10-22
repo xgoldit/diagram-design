@@ -701,3 +701,13 @@ Other things I've made:
 - [BestSelf.co](https://bestself.co): the SELF Journal and other paper tools for getting things done. Started on Kickstarter in 2015, sold to private equity in 2022, bought back 14 months later ([the story](https://www.littlemight.com/100-days-lessons-from-buying-my-business-back-from-private-equity/)).
 
 If this is useful, **star the repo** and come [say hi on X](https://x.com/cathrynlavery).
+
+<!-- OCI-RUNNER-STATUS:START -->
+## GitHub Actions · estado de OCI
+
+- **Estado de este repositorio:** Sin migración OCI verificada. Al 22-10-2026, la API de Actions no registra workflows ni ejecuciones para este repositorio.
+- **Archivos fuente:** `.github/workflows/auto-bump.yml`, `ci.yml` y `pages.yml` siguen en `main`, pero no aparecen registrados por Actions. `ci.yml` conserva una matriz Linux/Windows/macOS; no se ha alterado ni validado su activación.
+- **Jobs migrados o probados en OCI:** Ninguno. La presencia de YAML no demuestra que se ejecute.
+- **Pool XGOLD IT:** Los jobs compatibles podrán usar `xgoldit-ci-pool` (OCI1 preferente; OCI2 como overflow) sólo tras decisión/habilitación explícita para este repositorio y verificación de una ejecución terminal con su runner e identidad.
+- **Estado vivo:** [GitHub Actions](https://github.com/xgoldit/diagram-design/actions).
+<!-- OCI-RUNNER-STATUS:END -->
