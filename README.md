@@ -702,11 +702,12 @@ Other things I've made:
 
 If this is useful, **star the repo** and come [say hi on X](https://x.com/cathrynlavery).
 
-<!-- OCI2-RUNNER-STATUS:START -->
-## GitHub Actions · traslado a OCI2 Apps CI
+<!-- OCI-RUNNER-STATUS:START -->
+## GitHub Actions · estado de OCI
 
-- **Estado:** Pendiente de auditoría.
-- **Alcance / evidencia:** Hay YAML de workflow en la rama predeterminada, pero la API de GitHub no registra workflows activos; revisar activación/validez antes de definir la migración.
-- **Estado vivo:** [GitHub Actions](https://github.com/xgoldit/diagram-design/actions). El resultado de ejecuciones se sincroniza automáticamente allí; esta sección registra el corte documental.
-- **Pool objetivo:** `xgoldit-oci2-apps-ci` (Oracle OCI tenant `ljadue`). No se marca ningún job como exitoso sin verificar el runner y la conclusión `success`.
-<!-- OCI2-RUNNER-STATUS:END -->
+- **Estado de este repositorio:** Sin migración OCI verificada. Al 22-10-2026, la API de Actions no registra workflows ni ejecuciones para este repositorio.
+- **Archivos fuente:** `.github/workflows/auto-bump.yml`, `ci.yml` y `pages.yml` siguen en `main`, pero no aparecen registrados por Actions. `ci.yml` conserva una matriz Linux/Windows/macOS; no se ha alterado ni validado su activación.
+- **Jobs migrados o probados en OCI:** Ninguno. La presencia de YAML no demuestra que se ejecute.
+- **Pool XGOLD IT:** Los jobs compatibles podrán usar `xgoldit-ci-pool` (OCI1 preferente; OCI2 como overflow) sólo tras decisión/habilitación explícita para este repositorio y verificación de una ejecución terminal con su runner e identidad.
+- **Estado vivo:** [GitHub Actions](https://github.com/xgoldit/diagram-design/actions).
+<!-- OCI-RUNNER-STATUS:END -->
